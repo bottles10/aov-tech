@@ -314,7 +314,11 @@
         </div>
         <div class="-mt-5 p-10 lg:flex items-center justify-between space-y-10 lg:space-y-0">
           <div>
-            <input type="file" name="file" id="file" class=" text-xs">
+            <label for="file-upload" id="custom-file-upload" class="flex items-center space-x-3 cursor-progress transform hover:scale-105 transition duration-500">
+              <img src="/images/upload-file.png" alt="file upload icon" width="40" class="">
+              <span class="text-sm font-bold">Attach File</span>
+            </label>
+            <input type="file" name="file" id="file-upload" class="hidden">
           </div>
           <div class="hover:scale-105 transition duration-500">
             <button
@@ -365,6 +369,12 @@
   </footer>
 
   <script type="module" src="/main.js"></script>
+  <script>
+    const customFileUpload = querySelector('#custom-file-upload')
+    customFileUpload.addEventListener('click', function() {
+      document.querySelector('#file-upload').click()
+    })
+  </script>
 </body>
 
 </html>
