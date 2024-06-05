@@ -216,78 +216,100 @@
   <div class="relative bg-blue-500 py-24 text-white">
 
     <!-- diamond shape fun element  -->
-    <div
-      class="absolute top-0 right-0 mr-20 w-64 h-64 border-[30px] border-blue-600 rotate-45 translate-y-16 md:-translate-x-96">
-    </div>
-
+    <div class="absolute top-0 right-0 mr-20 w-64 h-64 border-[30px] border-blue-600 rotate-45 translate-y-16 md:-translate-x-96"></div>
+  
     <div class="relative container mx-auto px-10">
       <!-- header for what people say -->
       <div class="mb-10 flex items-center space-x-4 md:space-x-8">
         <div>
-          <h2
-            class="text-6xl md:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-green-600 rounded-lg shadow shadow-green-400">
-            2</h2>
+          <h2 class="text-6xl md:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-green-600 rounded-lg shadow shadow-green-400">2</h2>
         </div>
         <div>
-          <img src="https://cdn.pixabay.com/photo/2014/08/14/11/15/diamond-417896_960_720.png" alt="blue diamond image" width="150"
-            class="transform scale-95 md:scale-110">
+          <img src="https://cdn.pixabay.com/photo/2014/08/14/11/15/diamond-417896_960_720.png" alt="blue diamond image" width="150" class="transform scale-95 md:scale-110">
         </div>
         <div>
           <h2 class="text-2xl md:text-3xl font-extrabold">What People Say</h2>
         </div>
       </div>
-
+  
       <!-- what people say section contents  -->
       <div class="relative mb-4 md:w-3/5 mx-auto p-4 bg-red-400 rounded shadow">
-
-        <!-- diamond shape fun element for contents -->
-        <div
-          class="absolute top-0 left-0 w-8 h-8 border-4 hover:border-[6px] border-blue-700 hover:border-blue-400 rotate-45 transform -translate-x-10 md:-translate-x-16 translate-y-24 hover:scale-150 transition duration-500">
+  
+        <!-- diamond shape fun element for contents with paginate arrow links-->
+        <div class="absolute top-0 left-0 w-8 h-8 border-4 hover:border-[6px] border-blue-700 hover:border-blue-400 rotate-45 transform -translate-x-10 md:-translate-x-16 translate-y-24 hover:scale-150 transition duration-500">
+          <a href="#" id="back" class="inline-block hover:scale-110"><img src="https://img.icons8.com/?size=100&id=16084&format=png&color=FFFFFF" alt="arrow icon" width="30" class="transform -rotate-45"></a>
         </div>
-        <div
-          class="absolute top-0 right-0 mr-2 w-8 h-8 border-4 hover:border-[6px] border-blue-700 hover:border-blue-400 rotate-45 transform translate-x-10 md:translate-x-16 translate-y-24 hover:scale-150 transition duration-500">
+        <div class="absolute top-0 right-0 mr-2 w-8 h-8 border-4 hover:border-[6px] border-blue-700 hover:border-blue-400 rotate-45 transform translate-x-10 md:translate-x-16 translate-y-24 hover:scale-150 transition duration-500">
+          <a href="#" id="forward" class="inline-block hover:scale-x-110"><img src="https://img.icons8.com/?size=100&id=16051&format=png&color=FFFFFF" alt="arrow icon" width="40" class="tranform -rotate-45"></a>
         </div>
-
-        <div class="relative mb-4 flex items-center justify-center space-x-4">
-          <div class="border-4 border-pink-500 rounded-full animate-pulse">
-            <img src="/images/selfie.png" alt="selfie image" class="animate-none w-10 h-10 rounded-full">
+  
+        <div id="testimonial-container">
+          <div class="testimonial active">
+            <div class="relative mb-4 flex items-center justify-center space-x-4">
+              <div class="border-4 border-pink-500 rounded-full animate-pulse">
+                <img src="/images/selfie.png" alt="selfie image" class="animate-none w-10 h-10 rounded-full">
+              </div>
+              <div class="md:flex items-center md:space-x-2">
+                <p class="font-bold">Jason Welch</p>
+                <p class="hidden md:inline-block w-1 h-4 bg-pink-500 rounded"></p>
+                <p class="opacity-60 text-xs md:text-base">CEO at Gumbolt PLC</p>
+              </div>
+            </div>
+            <div>
+              <p class="mb-8 leading-relaxed">Candy cheesecake muffin pie candy canes. Halvah muffin fruitcake I love cake sweet halvah cookie. Lollipop chocolate cake brownie lollipop gummies toffee I love lemon drops jelly beans. Soufflé chupa chups fruitcake toffee I love danish oat cake cupcake.</p>
+            </div>
           </div>
-          <div class="md:flex items-center md:space-x-2">
-            <p class="font-bold">Jason Welch</p>
-            <p class="hidden md:inline-block w-1 h-4 bg-pink-500 rounded"></p>
-            <p class="opacity-60 text-xs md:text-base">CEO at Gumbolt PLC</p>
+          <div class="testimonial">
+            <div class="relative mb-4 flex items-center justify-center space-x-4">
+              <div class="border-4 border-pink-500 rounded-full animate-pulse">
+                <img src="/images/selfie.png" alt="selfie image" class="animate-none w-10 h-10 rounded-full">
+              </div>
+              <div class="md:flex items-center md:space-x-2">
+                <p class="font-bold">Alice Johnson</p>
+                <p class="hidden md:inline-block w-1 h-4 bg-pink-500 rounded"></p>
+                <p class="opacity-60 text-xs md:text-base">CTO at TechCorp</p>
+              </div>
+            </div>
+            <div>
+              <p class="mb-8 leading-relaxed">Donut soufflé pudding lemon drops fruitcake sugar plum muffin. Dragée brownie sweet roll croissant carrot cake jujubes oat cake dragée. Cake candy canes carrot cake danish liquorice chocolate bar topping chocolate bar.</p>
+            </div>
           </div>
-        </div>
-        <div>
-          <p class="mb-8 leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptas
-            asperiores porro repudiandae!
-            Laboriosam pariatur illo perferendis unde exercitationem eius numquam impedit iusto tenetur explicabo,
-            dolor, repellendus officia! Ipsam, dignissimos.</p>
-        </div>
 
+          <div class="testimonial">
+            <div class="relative mb-4 flex items-center justify-center space-x-4">
+              <div class="border-4 border-pink-500 rounded-full animate-pulse">
+                <img src="/images/selfie.png" alt="selfie image" class="animate-none w-10 h-10 rounded-full">
+              </div>
+              <div class="md:flex items-center md:space-x-2">
+                <p class="font-bold">Alan Treffler</p>
+                <p class="hidden md:inline-block w-1 h-4 bg-pink-500 rounded"></p>
+                <p class="opacity-60 text-xs md:text-base">Makerting Associates</p>
+              </div>
+            </div>
+            <div>
+              <p class="mb-8 leading-relaxed">I love marshmallow danish oat cake gummi bears chocolate cake. Gingerbread candy canes jelly-o I love candy canes muffin topping. Jelly chocolate cake marzipan jelly lollipop tootsie roll pie caramels bonbon.</p>
+            </div>
+          </div>
+          <!-- Add more testimonials here -->
+        </div>
+  
         <!-- pagination  -->
-        <div class="flex items-center justify-center space-x-2">
-          <a href="#" class="w-2 h-2 bg-white rounded transform hover:scale-125 transition duration-300"></a>
-          <a href="#"
-            class="w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
-          <a href="#"
-            class="w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
-          <a href="#"
-            class="w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
-          <a href="#"
-            class="w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
-          <a href="#"
-            class="w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
-          <a href="#"
-            class="w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
-          <a href="#"
-            class="w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
+        <div class="flex items-center justify-center space-x-2" id="pagination-container">
+          <a href="#" class="pagination-link w-2 h-2 bg-white rounded transform hover:scale-125 transition duration-300"></a>
+          <a href="#" class="pagination-link w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
+          <a href="#" class="pagination-link w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
+          <a href="#" class="pagination-link w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
+          <a href="#" class="pagination-link w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
+          <a href="#" class="pagination-link w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
+          <a href="#" class="pagination-link w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
+          <a href="#" class="pagination-link w-2 h-2 bg-pink-500 hover:bg-white rounded transform hover:scale-125 transition duration-300"></a>
         </div>
       </div>
-
+  
       <h2 class="md:w-3/5 mx-auto text-4xl md:text-6xl font-bold text-blue-600">Want to know more?</h2>
     </div>
   </div>
+  
 
   <!-- clients family section  -->
   <div class="bg-blue-500 text-white">
@@ -465,6 +487,59 @@
     customFileUpload.addEventListener('click', function () {
       document.querySelector('#file-upload').click()
     })
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  // Add custom CSS for testimonials
+  const style = document.createElement('style');
+  style.innerHTML = `
+    .testimonial {
+      display: none;
+    }
+    .testimonial.active {
+      display: block;
+    }
+    .pagination-link.active {
+      background-color: white;
+    }
+  `;
+  document.head.appendChild(style);
+
+  const testimonials = document.querySelectorAll('.testimonial');
+  const paginationLinks = document.querySelectorAll('.pagination-link');
+  let currentIndex = 0;
+
+  function updateActiveTestimonial(index) {
+    testimonials[currentIndex].classList.remove('active');
+    paginationLinks[currentIndex].classList.remove('active');
+    currentIndex = index;
+    testimonials[currentIndex].classList.add('active');
+    paginationLinks[currentIndex].classList.add('active');
+  }
+
+  document.getElementById('forward').addEventListener('click', (e) => {
+    e.preventDefault();
+    updateActiveTestimonial((currentIndex + 1) % testimonials.length);
+  });
+
+  document.getElementById('back').addEventListener('click', (e) => {
+    e.preventDefault();
+    updateActiveTestimonial((currentIndex - 1 + testimonials.length) % testimonials.length);
+  });
+
+  paginationLinks.forEach((link, index) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      updateActiveTestimonial(index);
+    });
+  });
+
+  // Set initial active testimonial and pagination link
+  updateActiveTestimonial(currentIndex);
+});
+
+
   </script>
 </body>
 
